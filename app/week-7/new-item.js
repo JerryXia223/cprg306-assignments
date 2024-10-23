@@ -36,7 +36,7 @@ export default function NewItem({ onAddItem }) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-  const item = { id: createNewID(), name, count, category };
+  const item = { id: createNewID(), name, quantity: count, category };
   console.log(item);
 
     alert(`Item added successfully!\nName: ${name}\nQuantity: ${count}\nCategory: ${category}`);
